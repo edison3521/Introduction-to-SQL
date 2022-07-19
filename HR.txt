@@ -1,0 +1,10 @@
+SELECT*FROM HRDataset_v14 WHERE Position ="Production Technician I";
+SELECT count(genderid)from HRDataset_v14  where GenderID="1";
+SELECT Employee_Name FROM HRDataset_v14 where ManagerName="Michael Albert";
+SELECT count(EmploymentStatus) FROM HRDataset_v14 where EmploymentStatus="Active";
+SELECT count(EmploymentStatus) FROM HRDataset_v14 where EmploymentStatus="Active" AND MaritalStatusID="1";
+SELECT Employee_Name FROM HRDataset_v14 WHERE EmploymentStatus="Active" AND Salary<60000;
+SELECT max (EngagementSurvey) FROM HRDataset_v14 WHERE Position="Production Technician II";
+SELECT Position,max( Salary) FROM HRDataset_v14;
+SELECT avg(Salary) FROM HRDataset_v14 ;SELECT Employee_Name FROM HRDataset_v14 WHERE Salary>69020;
+SELECT avg(Salary) FROM HRDataset_v14 ;SELECT Employee_Name FROM HRDataset_v14 WHERE Salary>69020 AND EmpSatisfaction="3";
